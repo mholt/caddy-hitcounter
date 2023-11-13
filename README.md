@@ -26,7 +26,12 @@ templates {
 
 (The `hitCounter` block is optional, but at least the function name must appear in the config.)
 
-Possible styles are green, bright_green, odometer, or yellow.
+Possible styles are:
+
+- <img src="https://github.com/mholt/caddy-hitcounter/assets/1128849/0ece69c9-4e5a-43e9-a826-34f8d15bbda5" height="24"> `green` (default)
+- <img src="https://github.com/mholt/caddy-hitcounter/assets/1128849/df9b6f07-9c8d-43ef-9235-fd57d0f13af0" height="22"> `bright_green`
+- <img src="https://github.com/mholt/caddy-hitcounter/assets/1128849/31736f9b-dee3-4670-8e38-b66b5514053c" height="18"> `odometer`
+- <img src="https://github.com/mholt/caddy-hitcounter/assets/1128849/aa0ee1f3-5dc6-4be4-a911-a5281618ace6" height="22"> `yellow`
 
 If you want your hit counter to have a fixed size / number of digits, you can set pad_digits > 0.
 
@@ -52,3 +57,8 @@ Although traditional hit counters generated images dynamically for each page loa
 
 - Make sure your hit counter has enough room. As each digit is its own image, you want to avoid wrapping. (CSS can help with this.)
 - Since the output is multiple `<img>` tags and not a single image source, make sure your page's CSS is compatible with the look you want for your hit counter (i.e. see if your existing CSS affects these `<img>` tags).
+
+
+## Why
+
+I grew up on a more whimsical, fun Web. So basically, [purely for nostalgia's sake](https://twitter.com/mholt6/status/1723538541505106343) (and the idea got a whole 10 likes on Twitter). There are almost DOZENS of us who want this!
