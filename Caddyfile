@@ -1,0 +1,11 @@
+localhost
+
+file_server
+templates {
+	extensions {
+		hitCounter {
+			style yellow
+			pad_digits 7
+		}
+	}
+}

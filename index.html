@@ -1,0 +1,16 @@
+<HTML>
+<HEAD>
+	<TITLE>Welcome to My Web Page!</TITLE>
+</HEAD>
+<BODY>
+	<H1>
+		Welcome!
+	</H1>
+	<HR>
+	<P>
+		This is my <FONT COLOR=red>super retro web page</FONT> with a...
+		<MARQUEE>hit counter</MARQUEE>
+	</P>
+	{{ hitCounter .Req.URL.Path }}
+</BODY>
+</HTML>
