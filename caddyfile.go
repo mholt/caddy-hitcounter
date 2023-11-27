@@ -10,12 +10,12 @@ import (
 // The style names are subject to change!
 //
 //	hitCounter {
-//	    style <green|bright_green|odometer|yellow>
+//	    style green|bright_green|odometer|yellow
 //	    pad_digits <num_digits>
 //	}
 func (hc *HitCounter) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	for d.Next() {
-		for d.NextBlock(0) {
+		for nesting := d.Nesting(); d.NextBlock(nesting); {
 			switch d.Val() {
 			case "style":
 				if !d.NextArg() {

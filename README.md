@@ -7,7 +7,12 @@ This plugin adds a retro hit counter component to Caddy templates.
 
 In a modern Web infested with bots, hit counters are terribly inaccurate these days... but that's part of the charm.
 
-**NOTE:** This is still in development, and currently requires [an upstream patch in Caddy](https://github.com/caddyserver/caddy/pull/5939). This module is subject to change.
+> [!WARNING]
+> This is still in development, and currently requires [an upstream patch in Caddy](https://github.com/caddyserver/caddy/pull/5939). This module is subject to change.
+
+> [!NOTE]
+> This is not an official repository of the [Caddy Web Server](https://github.com/caddyserver) organization.
+
 
 ## Usage
 
