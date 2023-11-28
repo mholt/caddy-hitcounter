@@ -48,6 +48,14 @@ Then in your template:
 
 where `key` is a string identifier for this particular counter. If you want to share the same hit counter for the whole site, use `.Req.URL.Host`. Or if you want it to be for just the page, use `.Req.URL.Path` as the key.
 
+If your hit counter is optional, and you want your template to work for other Caddy users that may not have this module installed, you can invoke it "softly":
+
+```
+{{ maybe "hitCounter" "key" }}
+```
+
+The `maybe` template action is like the built-in `call` function, except it gracefully no-ops if the requested function is not plugged in.
+
 ## How it works
 
 Every time the hit counter is shown, it increments the count.

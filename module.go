@@ -84,7 +84,7 @@ func (hc *HitCounter) Provision(ctx caddy.Context) error {
 		}
 		b64 := base64.StdEncoding.EncodeToString(file)
 
-		hc.imgTags[i] = fmt.Sprintf(`<img src="data:%s;base64,%s">`, mimeType, b64)
+		hc.imgTags[i] = fmt.Sprintf(`<img alt="%d" title="Hit counter" src="data:%s;base64,%s">`, i, mimeType, b64)
 	}
 
 	if err := hc.restore(); err != nil {
